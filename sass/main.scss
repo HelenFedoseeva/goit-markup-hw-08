@@ -1,0 +1,30 @@
+@import './utils/variables';
+@import './utils/visually-hidden';
+
+@import './base/base.scss';
+@import './base/container';
+@import './base/section';
+@import './base/backdrop';
+
+
+
+
+@import './components/logo';
+@import './components/icon-team';
+@import './components/modal-open';
+@import './components/form-modal';
+@import './components/footer-form';
+@import './components/portfolio__overlay';
+@import './components/team-section';
+@import './components/buttons';
+
+
+
+@import './layout/header';
+@import './layout/hero';
+@import './layout/footer';
+@import './layout/portfolio__nav';
+@import './layout/portfolio__list';
+@import './layout/description-section';
+@import './layout/occupation-section';
+@import './layout/clients-section';
