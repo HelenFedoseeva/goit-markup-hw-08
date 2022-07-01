@@ -1,10 +1,31 @@
-.container {
-    width: 1200px;
-    padding: 0px 15px;
-    margin: 0 auto;
+.container{
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
-.flex-container {
-    display: flex;
-    align-items: baseline;
+@media screen and (min-width: 480px) {
+    .container {
+        width: 480px;
+        margin: 0 auto;
+    }
 }
+
+@media screen  and (min-width: 768px) {
+    .container {
+        width: 768px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+         width: 1200px;
+
+    }
+}
+
+
+// .flex-container {
+//     display: flex;
+//     align-items: baseline;
+// }

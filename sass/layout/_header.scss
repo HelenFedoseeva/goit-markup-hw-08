@@ -1,121 +1,146 @@
-.header {
-    border-bottom: 1px solid var(--border-line-color);
-}
-
-.navigation {
+.header__container {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
-
-.navigation__list {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: var(--title-color);
-    display: flex;
+.navigation__list{
+    display: none;
 }
-
-.navigation__item {
-    position: relative;
-
-    &:not(:last-child) {
-            margin-right: 50px;
-        }
-
-}
-
-
-
-
-.navigation__link {
-    display: block;
-    padding: 32px 0;
-    color: var(--basic-color);
-    text-decoration: none;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    &:hover,
-    &:focus {
-            color: var(--focus-color);
-    
-        }
-}
-
-
-
 .navigation__contacts {
-    display: flex;
-    align-items: center;
-    margin-left: auto;
+    display: none;
 }
 
-.navigation__contacts-item:not(:last-child) {
-    margin-right: 50px;
-}
-
-.navigation__contacts-link {
-    display: flex;
-    align-items: center;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: var(--contact-color);
-    text-decoration: none;
-    padding: 32px 0;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.mobile-menu-open-btn {
+    border: none;
+    background-color: #fff;
+    color: #000;
 
     &:hover,
     &:focus {
-            color: var(--focus-color);
-    
-    
-        }
-}
-
-
-.navigation__contact-icon {
-    margin-right: 10px;
-    fill: var(--contact-color);
-    width: 16px;
-    height: 12px;
-
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    .navigation__contacts-link:hover &,
-    .navigation__contacts-link:focus & {
-            fill: var(--focus-color);
-    
-        }
-
-
-}
-
-
-
-.smartphone {
-    width: 10px;
-    height: 16px;
-}
-
-.current-page {
-    color: #2196F3;
-
-    &::after {
-        content: "";
-
-        position: absolute;
-        left: 0;
-        top: 100%;
-
-
-        width: 100%;
-        height: 4px;
-        background-color: var(--focus-color);
-        border-radius: 2px;
-
+        color: var(--focus-color);
     }
-
-
 }
+
+.mobile-menu-open-btn__icon {
+    fill: currentColor;
+}
+// .header {
+//     border-bottom: 1px solid var(--border-line-color);
+// }
+
+// .navigation {
+//     display: flex;
+//     align-items: center;
+// }
+
+// .navigation__list {
+//     font-weight: 500;
+//     font-size: 14px;
+//     line-height: 1.14;
+//     letter-spacing: 0.02em;
+//     color: var(--title-color);
+//     display: flex;
+// }
+
+// .navigation__item {
+//     position: relative;
+
+//     &:not(:last-child) {
+//             margin-right: 50px;
+//         }
+
+// }
+
+
+
+
+// .navigation__link {
+//     display: block;
+//     padding: 32px 0;
+//     color: var(--basic-color);
+//     text-decoration: none;
+//     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+//     &:hover,
+//     &:focus {
+//             color: var(--focus-color);
+    
+//         }
+// }
+
+
+// .navigation__contacts {
+//     display: flex;
+//     align-items: center;
+//     margin-left: auto;
+// }
+
+// .navigation__contacts-item:not(:last-child) {
+//     margin-right: 50px;
+// }
+
+// .navigation__contacts-link {
+//     display: flex;
+//     align-items: center;
+//     font-weight: 500;
+//     font-size: 14px;
+//     line-height: 1.14;
+//     letter-spacing: 0.02em;
+//     color: var(--contact-color);
+//     text-decoration: none;
+//     padding: 32px 0;
+//     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+//     &:hover,
+//     &:focus {
+//             color: var(--focus-color);
+    
+    
+//         }
+// }
+
+
+// .navigation__contact-icon {
+//     margin-right: 10px;
+//     fill: var(--contact-color);
+//     width: 16px;
+//     height: 12px;
+
+//     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+//     .navigation__contacts-link:hover &,
+//     .navigation__contacts-link:focus & {
+//             fill: var(--focus-color);
+    
+//         }
+
+
+// }
+
+
+
+// .smartphone {
+//     width: 10px;
+//     height: 16px;
+// }
+
+// .current-page {
+//     color: #2196F3;
+
+//     &::after {
+//         content: "";
+
+//         position: absolute;
+//         left: 0;
+//         top: 100%;
+
+
+//         width: 100%;
+//         height: 4px;
+//         background-color: var(--focus-color);
+//         border-radius: 2px;
+
+//     }
+
+
+// }
