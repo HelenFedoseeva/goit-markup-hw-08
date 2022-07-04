@@ -1,36 +1,41 @@
-.modal {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    box-sizing: border-box;
 
-
-
-    margin: auto;
-    min-width: 528px;
-    min-height: 581px;
-    background-color: #fff;
-
-}
-
-.modal__button {
-    position: absolute;
-    top: 8px;
-    right: 8px;
-
-    width: 30px;
-    height: 30px;
-   
+@media screen and (min-width: 480px) {
+    .modal {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            box-sizing: border-box;
     
-
-
+    
+    
+            margin: auto;
+            min-width: 450px;
+            min-height: 609px;
+            background-color: #fff;
+    
+        }
+        .modal__button {
+            position: absolute;
+            top: 8px;
+            right: 8px;
+    
+            width: 30px;
+            height: 30px;
+    
+        }
+    
+        .close__icon {
+            width: 18px;
+            height: 18px;
+            fill: currentColor;
+    
+        }
 }
 
-.close__icon {
-    width: 18px;
-    height: 18px;
-    fill: currentColor;
-
+@media screen and (min-width: 1200px) {
+    .modal {
+        min-width: 528px;
+        min-height: 581px;
+    }
 }
-
