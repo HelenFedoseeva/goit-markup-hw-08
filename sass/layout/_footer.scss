@@ -3,7 +3,7 @@
 @media screen and (min-width: 480px) {
     .footer {
             background-color: #2F303A;
-            padding: 60px 0;
+            padding: 60px 0px;
             text-align: center;
         
         }
@@ -111,6 +111,8 @@
 }
 
 @media screen and (min-width: 1200px) {
+   
+
     .footer__adress {
         text-align: left;
             margin-right: 70px;

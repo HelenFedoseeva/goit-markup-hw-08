@@ -1,9 +1,12 @@
 
 @media screen and (min-width: 480px) {
+    .portfolio__photo {
+        width: 450px;
+    }
    
     .portfolio__item {
             margin-bottom: 30px;
-            min-width: 450px;
+            width: 450px;
     }
 
     .portfolio__link {
@@ -21,8 +24,6 @@
     }
 
         .portfolio__list-description {
-           
-
             padding-top: 20px;
             padding-right: 24px;
             padding-bottom: 20px;
@@ -53,6 +54,9 @@
 
 
 @media screen and (min-width: 768px) {
+    .portfolio__photo {
+            width: 350px;
+        }
     .portfolio__list {
             display: flex;
             flex-wrap: wrap;
@@ -62,7 +66,7 @@
     
         .portfolio__item {
 
-            min-width: 354px;
+            width: 354px;
 
             &:not(:nth-child(2n)) {
                 margin-right: 30px;
@@ -74,27 +78,46 @@
             
         }
 
+        .portfolio__overlay-container {
+            width: 350px;
+        }
+
    
 }
 
 @media screen and (min-width: 1200px) {
+
+    .portfolio__photo {
+            width: 370px;
+        }
     .portfolio__list {
-        display: flex;
-        flex-wrap: wrap;
+       
         margin: 0 auto;
     }
     .portfolio__item {
-        min-width: 370px;
-        margin-bottom: 30px;
+
+        width: 370px;
+        // margin-bottom: 30px;
+
+            &:not(:nth-child(2n)) {
+                margin-right: auto;
+            }
     
             &:not(:nth-child(3n)) {
                 margin-right: 30px;
             }
-    
-            &:nth-last-child(-n+3) {
-                margin-bottom: 0px;
+            
+            &:not(:nth-child(-n+2)) {
+                margin-bottom: none;
             }
+            // &:nth-last-child(-n+3) {
+            //     margin-bottom: 0px;
+            // }
         }
+
+                 .portfolio__overlay-container {
+                     width: 370px;
+                 }
     
     
 }
