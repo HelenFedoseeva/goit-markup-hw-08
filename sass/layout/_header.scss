@@ -69,6 +69,8 @@
             &:not(:last-child) {
                     margin-right: 50px;
                 }
+              
+            
     
         }
 
@@ -139,7 +141,7 @@
     
                 position: absolute;
                 left: 0;
-                top: 100%;
+                top: 97%;
     
     
                 width: 100%;
@@ -198,6 +200,13 @@
             width: 10px;
             height: 16px;
         }
+
+    .current-page {
+        &::after {
+            content: "";
+            top: 103%;
+        }
+    }
 }
 
 

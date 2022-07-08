@@ -1,13 +1,16 @@
 
-@media screen and (min-width: 480px) {
+
     .portfolio__photo {
-        width: 450px;
+        width: 100%;
     }
    
-    .portfolio__item {
-            margin-bottom: 30px;
+         .portfolio__item {
             width: 450px;
-    }
+            
+             &:not(:last-child) {
+                 margin-bottom: 30px;
+             }
+         }
 
     .portfolio__link {
         display: block;
@@ -50,36 +53,34 @@
             letter-spacing: 0.03em;
             color: var(--contact-color);
         }
-}
+
 
 
 @media screen and (min-width: 768px) {
     .portfolio__photo {
-            width: 350px;
+            width: 100%;
         }
     .portfolio__list {
             display: flex;
             flex-wrap: wrap;
+
+            gap: 30px 30px;
             margin: 0 auto;
     
         }
     
         .portfolio__item {
 
-            width: 354px;
+            width: calc((100% - 30px)/2);
 
-            &:not(:nth-child(2n)) {
-                margin-right: 30px;
-            }
-
-            &:not(:nth-child(-n+2)) {
-                margin-bottom: 30px;
+            &:not(:last-child) {
+                margin-bottom: 0px;
             }
             
         }
 
         .portfolio__overlay-container {
-            width: 350px;
+            width: 100%;
         }
 
    
@@ -88,35 +89,29 @@
 @media screen and (min-width: 1200px) {
 
     .portfolio__photo {
-            width: 370px;
+            width: 100%;
         }
     .portfolio__list {
+     
        
         margin: 0 auto;
     }
     .portfolio__item {
 
-        width: 370px;
-        // margin-bottom: 30px;
+        width: calc((100% - 60px)/3);
+        
 
-            &:not(:nth-child(2n)) {
-                margin-right: auto;
-            }
-    
-            &:not(:nth-child(3n)) {
-                margin-right: 30px;
-            }
-            
-            &:not(:nth-child(-n+2)) {
-                margin-bottom: none;
-            }
-            // &:nth-last-child(-n+3) {
-            //     margin-bottom: 0px;
-            // }
+           
         }
+    .portfolio__link {
+        display: flex;
+            flex-direction: column;
+            height: 100%;
+    }
 
                  .portfolio__overlay-container {
-                     width: 370px;
+                     width: 100%;
+                     flex-grow: 1;
                  }
     
     

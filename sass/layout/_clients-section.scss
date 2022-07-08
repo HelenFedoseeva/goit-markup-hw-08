@@ -28,7 +28,7 @@
 
 
 
-@media screen and (min-width: 480px) {
+
     .clients-section__title {
             font-weight: 700;
             font-size: 28px;
@@ -42,19 +42,18 @@
         .clients-section__list {
             display: flex;
             flex-wrap: wrap;
+
+            gap: 30px 30px;
     
         }
 
         .clients-section__item {
             width: 210px;
             height: 92px;
-            margin-bottom: 30px;
+            
+            
 
-
-            &:not(:nth-child(2n)) {
-                margin-right: 30px;
-            }
-        
+            
          }
 
         .clients-section__link {
@@ -78,11 +77,11 @@
         }
 
      .clients-section__icon {
-             width: 106px;
+            width: 106px;
             height: 60px;
             fill: currentColor;
-                        }
-    }   
+    }
+  
 
 
 
@@ -90,16 +89,10 @@
     .clients-section__list {
         justify-content: center;
         align-items: center;
-    }
-    .clients-section__item {
-        &:not(:nth-child(2n)) {
-                margin-right: 0;
-            }
 
-        &:not(:nth-child(3n)) {
-                margin-right: 30px;
-            }
+    
     }
+    
 }
 
 
@@ -112,9 +105,7 @@
             width: 170px;
             height: 92px;
     
-            &:not(:last-child) {
-                margin-right: 30px;
-            }
+            
     
         }
 }
