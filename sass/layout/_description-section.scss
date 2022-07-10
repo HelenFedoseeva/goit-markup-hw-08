@@ -46,9 +46,9 @@
 // }
 
 
-    .description-section__item:not(:last-child) {
-            margin-bottom: 30px;
-        }
+    .description-section__list {
+        gap: 30px 30px;
+    }
 
 
                 .description-section__icon-container {

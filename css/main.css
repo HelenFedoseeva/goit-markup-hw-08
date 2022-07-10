@@ -70,7 +70,7 @@ body {
 .container {
   padding-left: 15px;
   padding-right: 15px;
-  width: 480px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -78,6 +78,11 @@ body {
   padding: 60px 0px;
 }
 
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
@@ -135,6 +140,10 @@ body {
     padding-bottom: 48px;
     padding-left: 40px;
     padding-right: 40px;
+    height: 100%;
+  }
+
+  .mobile-menu__nav-container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -249,15 +258,6 @@ body {
 
   .mobile-menu__media-link {
     color: inherit;
-  }
-
-  .mobile-menu__decoration {
-    display: inline-block;
-    width: 22px;
-    height: 0px;
-    margin-right: 10px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    transform: rotate(90deg);
   }
 }
 .logo {
@@ -653,7 +653,7 @@ body {
 .team-section__title {
   font-weight: 700;
   font-size: 28px;
-  line-height: 1.16;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--title-color);
   text-align: center;
@@ -723,6 +723,7 @@ body {
 @media screen and (min-width: 1200px) {
   .team-section__title {
     font-size: 36px;
+    line-height: 1.16;
   }
 
   .team-section__list {
@@ -1215,8 +1216,8 @@ body {
     flex-grow: 1;
   }
 }
-.description-section__item:not(:last-child) {
-  margin-bottom: 30px;
+.description-section__list {
+  gap: 30px 30px;
 }
 
 .description-section__icon-container {
@@ -1403,6 +1404,8 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .clients-section__title {
+    font-size: 36px;
+    line-height: 1.16;
     margin-bottom: 50px;
   }
 

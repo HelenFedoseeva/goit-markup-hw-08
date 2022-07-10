@@ -21,21 +21,23 @@
             visibility: visible;
             pointer-events: auto;
         }
+         .mobile-menu__container {
+             position: relative;
     
-        .mobile-menu__container {
-            position: relative;
+             padding-top: 48px;
+             padding-bottom: 48px;
+             padding-left: 40px;
+             padding-right: 40px;
+             height: 100%;
     
-            padding-top: 48px;
-            padding-bottom: 48px;
-            padding-left: 40px;
-            padding-right: 40px;
-            
+         }
+
+         .mobile-menu__nav-container {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-
-    
-        }
+         }
+       
     
         .mobile-menu-open-btn {
             border: none;
@@ -177,21 +179,8 @@
     
         .mobile-menu__media-link {
             color: inherit;
-           
-    
-    
-           
+          
         }
     
-        .mobile-menu__decoration {
-            display: inline-block;
-            width: 22px;
-            height: 0px;
-    
-            margin-right: 10px;
-    
-            border: 1px solid rgba(33, 33, 33, 0.2);
-            transform: rotate(90deg);
-        }
 }
 

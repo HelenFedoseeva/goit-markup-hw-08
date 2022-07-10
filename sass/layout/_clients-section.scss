@@ -92,12 +92,18 @@
 
     
     }
+
+    .clients-section__item {
+        width: calc((100%-60px)/3);
+    }
     
 }
 
 
 @media screen and (min-width: 1200px) {
     .clients-section__title {
+        font-size: 36px;
+        line-height: 1.16;
         margin-bottom: 50px;
     }
     

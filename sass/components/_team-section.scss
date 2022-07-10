@@ -32,7 +32,7 @@
     .team-section__title {
             font-weight: 700;
             font-size: 28px;
-            line-height: 1.16;
+            line-height: 1.17;
             letter-spacing: 0.03em;
             color: var(--title-color);
             text-align: center;
@@ -92,6 +92,8 @@
 
 @media screen and (min-width: 768px) {
 
+    
+
     .team-section__list {
         display: flex;
         flex-wrap: wrap;
@@ -123,6 +125,7 @@
    
     .team-section__title {
         font-size: 36px;
+        line-height: 1.16;
     }
     .team-section__list {
         display: flex;
