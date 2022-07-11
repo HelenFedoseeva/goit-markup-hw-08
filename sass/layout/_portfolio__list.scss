@@ -14,8 +14,10 @@
          }
 
     .portfolio__link {
-        display: block;
+        display: flex;
+        flex-direction: column;
         text-decoration: none;
+        height: 100%;
 
         transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -36,6 +38,8 @@
             border-right: 1px solid var(--border-line-color);
             border-bottom: 1px solid var(--border-line-color);
             border-left: 1px solid var(--border-line-color);
+
+            flex-grow: 1;
         }
 
         .portfolio__list-company {
@@ -106,7 +110,7 @@
 
                  .portfolio__overlay-container {
                      width: 100%;
-                     flex-grow: 1;
+                    //  flex-grow: 1;
                  }
     
     
