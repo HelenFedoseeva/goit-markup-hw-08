@@ -46,14 +46,15 @@
 // }
 
 
-    .description-section__list {
-        gap: 30px 30px;
-    }
-
+            .description-section__item {
+                &:not(:last-child) {
+                    margin-bottom: 30px;
+                }
+            }
 
                 .description-section__icon-container {
                     background-color: var(--icon-color);
-                    width: 450px;
+                    // width: 450px;
                     height: 120px;
                     margin-bottom: 30px;
                     display: flex;
@@ -89,12 +90,15 @@
 
 
 @media screen and (min-width: 768px) {
-    .description-section__icon-container {
-        width: 350px;
-    }
+    // .description-section__icon-container {
+    //     width: 350px;
+    // }
     .description-section__item {
         width: calc((100% - 30px)/2);
         
+        &:not(:last-child) {
+            margin-bottom: 0px;
+        }
 
     }
 
@@ -121,7 +125,7 @@
     
         }
         .description-section__item {
-            width: 270px;
+            width: calc((100% - 90px) / 4);
             
             &:not(:last-child) {
                 margin-bottom: 0px;

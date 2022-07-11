@@ -1,11 +1,12 @@
 
 
     .portfolio__photo {
-        width: 100%;
+        max-width: 100%;
+        height: auto;
+        display: block;
     }
    
          .portfolio__item {
-            width: 450px;
             
              &:not(:last-child) {
                  margin-bottom: 30px;
@@ -57,9 +58,7 @@
 
 
 @media screen and (min-width: 768px) {
-    .portfolio__photo {
-            width: 100%;
-        }
+  
     .portfolio__list {
             display: flex;
             flex-wrap: wrap;
@@ -88,25 +87,21 @@
 
 @media screen and (min-width: 1200px) {
 
-    .portfolio__photo {
-            width: 100%;
-        }
+  
     .portfolio__list {
      
-       
         margin: 0 auto;
     }
     .portfolio__item {
 
         width: calc((100% - 60px)/3);
-        
+     }
 
-           
-        }
+
     .portfolio__link {
         display: flex;
-            flex-direction: column;
-            height: 100%;
+        flex-direction: column;
+        height: 100%;
     }
 
                  .portfolio__overlay-container {

@@ -48,7 +48,7 @@
         }
 
         .clients-section__item {
-            width: 210px;
+            width: calc((100% - 30px)/2);
             height: 92px;
             
             
@@ -94,7 +94,7 @@
     }
 
     .clients-section__item {
-        width: calc((100%-60px)/3);
+        width: calc((100% - 60px)/3);
     }
     
 }
@@ -108,7 +108,7 @@
     }
     
     .clients-section__item {
-            width: 170px;
+            width: calc((100% - 150px) / 6);
             height: 92px;
     
             

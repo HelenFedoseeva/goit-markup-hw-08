@@ -51,6 +51,11 @@
                 }
         }
 
+                .team-section__photo {
+                    max-width: 100%;
+                    height: auto;
+        
+                }
 
     .team-description-container {
         padding-top: 30px;
@@ -103,10 +108,7 @@
         gap: 30px 30px;
     }
 
-    .team-section__photo {
-        width: 100%;
-        
-    }
+    
 
     .team-section__item {
         width: calc((100% - 30px)/2);
@@ -134,7 +136,7 @@
     }
 
         .team-section__item{
-            width: auto;
+            
             background-color: #fff;
             text-align: center;
             box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14);

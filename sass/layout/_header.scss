@@ -157,23 +157,19 @@
 
 
 
-
-
-
-
-
 @media screen and (min-width: 1200px) {
     .header__container {
         margin: 0 auto;
     }
     .navigation__contacts {
             display: flex;
-            // align-items: center;
+            align-items: center;
             margin-left: auto;
         }
     
         .navigation__contacts-item:not(:last-child) {
             margin-right: 50px;
+            margin-bottom: 0px;
         }
     
         .navigation__contacts-link {
@@ -204,7 +200,7 @@
     .current-page {
         &::after {
             content: "";
-            top: 103%;
+            top: 97%;
         }
     }
 }
